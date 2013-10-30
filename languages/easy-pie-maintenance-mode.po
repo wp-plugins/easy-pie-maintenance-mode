@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Pie Maintenance Mode\n"
+"POT-Creation-Date: 2013-10-20 07:33-0700\n"
+"PO-Revision-Date: 2013-10-20 14:59-0700\n"
+"Last-Translator: \n"
+"Language-Team: Easy Pie WP <bob@easypiewp.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: J:\\xampp\\htdocs\\ezp\\bobstuff\\plugins\\easy-pie-"
+"maintenance-mode\n"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:81
+msgid "Problem reading template "
+msgstr "Problem reading template "
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:229
+msgid "Enabled"
+msgstr "Enabled"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:232
+msgid "Visuals"
+msgstr "Visuals"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:233
+msgid "Page"
+msgstr "Page"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:236
+msgid "Fields"
+msgstr "Fields"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:237
+msgid "Title"
+msgstr "Title"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:238
+msgid "Header"
+msgstr "Header"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:239
+msgid "Headline"
+msgstr "Headline"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:240
+msgid "Message"
+msgstr "Message"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:241
+msgid "Logo"
+msgstr "Logo"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:272
+msgid "HTML tags are allowed. e.g. Add <br/> for break."
+msgstr "HTML tags are allowed. e.g. Add <br/> for break."
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:342
+msgid "All fields are optional"
+msgstr "All fields are optional"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:482
+msgid "problem reading manifest in "
+msgstr "Logo"
+
+#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:14
+msgid "If you have a caching plugin, be sure to clear the cache!"
+msgstr "If you have a caching plugin, be sure to clear the cache!"
