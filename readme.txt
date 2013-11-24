@@ -35,8 +35,14 @@ Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image
 
 == Frequently Asked Questions ==
 
+= The plugin isn't working! It's giving me a blank screen or is showing me an error with the word '__DIR__' in it. Help!? =
+Unfortunately I recently discovered that the plugin is only compatible with PHP 5.3 or later. A fix will be included in the next version of the plugin. To verify this is the problem go to your [host's CPanel interface](http://www.inmotionhosting.com/support/edu/cpanel/getting-started-cpanel/how-to-view-your-php-version-in-cpanel) to check your PHP version. If you have a version of PHP before 5.3, then this is the problem. If not, and you are interested in debugging the problem please [email me](mailto:bob@easypiewp.com). Thanks.
+
 = What happens if a search engine hits my site while it's in maintenance mode? =
 The plugin returns a '503' status with 'retry later' HTTP header when in maintenance mode. This lets search engines know that your site is temporarily down and to come back 24 hours later.
+
+= Can I create my own mini-theme? =
+In version 0.5, there are ways of doing it, but it's not easy for a beginner. I recommend waiting till the next release. If by chance, you have managed to hack a theme, please be aware that since the themes for v0.5 reside in the plugins directory that all themes will be wiped and reinstalled during the next upgrade so make sure you create a backup of your hacked theme before performing the next upgrade. The next version will not have this problem - user themes will be retained between updates.
 
 == Screenshots ==
  
