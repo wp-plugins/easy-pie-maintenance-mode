@@ -344,12 +344,16 @@ if (!class_exists('Easy_Pie_Maintenance_Mode')) {
 
         private function get_template_path($page_template_key) {
 
-            return __DIR__ . "/../mini-themes/" . $page_template_key;
+            $__dir__ = dirname(__FILE__);
+            
+            return $__dir__ . "/../mini-themes/" . $page_template_key;
         }
 
         public function render_active_theme_selector($args) {
 
-            $path = __DIR__ . "/../mini-themes/";
+            $__dir__ = dirname(__FILE__);
+            
+            $path = $__dir__ . "/../mini-themes/";
 
             $dirs = glob($path . "*", GLOB_ONLYDIR);
 
@@ -456,13 +460,17 @@ if (!class_exists('Easy_Pie_Maintenance_Mode')) {
 
         function display_options_page() {
 
-            include(__DIR__ . '/../pages/page-options.php');
+            $__dir__ = dirname(__FILE__);
+            
+            include($__dir__ . '/../pages/page-options.php');
         }
 
         private function get_manifests() {
 
+            $__dir__ = dirname(__FILE__);
+            
             $manifest_array = array();
-            $path = __DIR__ . "/../mini-themes/";
+            $path = $__dir__ . "/../mini-themes/";
             $dirs = glob($path . "*", GLOB_ONLYDIR);
 
             sort($dirs);

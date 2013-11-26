@@ -35,9 +35,6 @@ Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image
 
 == Frequently Asked Questions ==
 
-= The plugin isn't working! It's giving me a blank screen or is showing me an error with the word '__DIR__' in it. Help!? =
-Unfortunately I recently discovered that the plugin is only compatible with PHP 5.3 or later. A fix will be included in the next version of the plugin. To verify this is the problem go to your [host's CPanel interface](http://www.inmotionhosting.com/support/edu/cpanel/getting-started-cpanel/how-to-view-your-php-version-in-cpanel) to check your PHP version. If you have a version of PHP before 5.3, then this is the problem. If not, and you are interested in debugging the problem please [email me](mailto:bob@easypiewp.com). Thanks.
-
 = What happens if a search engine hits my site while it's in maintenance mode? =
 The plugin returns a '503' status with 'retry later' HTTP header when in maintenance mode. This lets search engines know that your site is temporarily down and to come back 24 hours later.
 
@@ -51,10 +48,16 @@ In version 0.5, there are ways of doing it, but it's not easy for a beginner. I 
 
 == Changelog ==
 
+= 0.5.1 =
+* Fix for PHP 5.2.x
+
 = 0.5 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.5.1 =
+* Small fix for PHP 5.2.x. If you aren't running PHP 5.2.x you don't need this although it won't hurt anything if you update anyway.
 
 = 0.5 =
 * Initial release
