@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Pie Maintenance Mode\n"
-"POT-Creation-Date: 2013-10-20 07:33-0700\n"
-"PO-Revision-Date: 2013-10-20 14:59-0700\n"
+"POT-Creation-Date: 2013-11-28 14:58-0700\n"
+"PO-Revision-Date: 2013-11-28 15:27-0700\n"
 "Last-Translator: \n"
 "Language-Team: Easy Pie WP <bob@easypiewp.com>\n"
 "Language: English\n"
@@ -13,61 +13,112 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: J:\\xampp\\htdocs\\ezp\\bobstuff\\plugins\\easy-pie-"
-"maintenance-mode\n"
+"X-Poedit-SearchPath-0: J:\\xampp171\\htdocs\\ezp\\bobstuff\\plugins\\easy-"
+"pie-maintenance-mode\n"
 
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:81
-msgid "Problem reading template "
-msgstr "Problem reading template "
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:229
-msgid "Enabled"
-msgstr "Enabled"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:232
-msgid "Visuals"
-msgstr "Visuals"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:233
-msgid "Page"
-msgstr "Page"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:236
-msgid "Fields"
-msgstr "Fields"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:237
-msgid "Title"
-msgstr "Title"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:238
-msgid "Header"
-msgstr "Header"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:239
-msgid "Headline"
-msgstr "Headline"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:240
-msgid "Message"
-msgstr "Message"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:241
-msgid "Logo"
-msgstr "Logo"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:272
-msgid "HTML tags are allowed. e.g. Add <br/> for break."
-msgstr "HTML tags are allowed. e.g. Add <br/> for break."
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:342
-msgid "All fields are optional"
-msgstr "All fields are optional"
-
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-maintenance-mode.php:482
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm-utility.php:128
 msgid "problem reading manifest in "
 msgstr "Logo"
 
-#: J:\xampp\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:14
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:82
+msgid "Maintenance Mode is On"
+msgstr "Maintenance Mode is On"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:130
+msgid "Problem reading template "
+msgstr "Problem reading template "
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:170
+msgid "Tried to create "
+msgstr "Tried to create "
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:289
+msgid "Enabled"
+msgstr "Enabled"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:292
+msgid "Visuals"
+msgstr "Visuals"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:293
+msgid "Mini-theme"
+msgstr "Mini-theme"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:296
+msgid "Fields"
+msgstr "Fields"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:297
+msgid "Title"
+msgstr "Title"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:298
+msgid "Header"
+msgstr "Header"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:299
+msgid "Headline"
+msgstr "Headline"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:300
+msgid "Message"
+msgstr "Message"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:301
+msgid "Logo"
+msgstr "Logo"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:331
+msgid "HTML tags are allowed. e.g. Add &lt;br/&gt; for break."
+msgstr "HTML tags are allowed. e.g. Add &lt;br/&gt; for break."
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:404
+msgid "All fields are optional"
+msgstr "All fields are optional"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:446
+msgid "User Defined:"
+msgstr "User Defined:"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:449
+msgid "by"
+msgstr "by"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:13
 msgid "If you have a caching plugin, be sure to clear the cache!"
 msgstr "If you have a caching plugin, be sure to clear the cache!"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:26
+msgid "Advanced Settings"
+msgstr "Advanced Settings"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:29
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:32
+msgid "Page styling varies greatly. "
+msgstr "Page styling varies greatly. "
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:32
+msgid "Update custom CSS when switching mini-themes."
+msgstr "Update custom CSS when switching mini-themes."
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:42
+msgid "Create your own mini-theme"
+msgstr "Create your own mini-theme"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:55
+msgid "Comment or question?"
+msgstr "Comment or question?"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:55
+msgid "Email"
+msgstr "Email"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:55
+msgid "or stop by"
+msgstr "or stop by"
+
+#~ msgid "Page"
+#~ msgstr "Page"

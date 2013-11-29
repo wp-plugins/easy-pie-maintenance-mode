@@ -1,14 +1,4 @@
 <?php
-/*
-  Plugin Name: Easy Pie Maintenance Mode
-  Plugin URI: http://easypiewp.com/easy-pie-maintenance-mode-faq/
-  Description: Lets people know that your site is temporarily down.
-  Version: 0.6.0
-  Author: Bob Riley
-  Author URI: http://www.easypiewp.com
-  Text Domain: easy-pie-maintenance-mode
-  License: GPL v3 
-*/
 
 /*
   Easy Pie Maintenance Mode Plugin
@@ -31,8 +21,35 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-require_once("classes/class-easy-pie-mm.php");
+if (!class_exists('Easy_Pie_MM_Constants')) {
 
-$easy_pie_mm = new Easy_Pie_MM(__FILE__);
+    /**
+     * Constants for Easy Pie Maintenance Mode Plugin
+     *
+     * @author Bob Riley <bob@easypiewp.com>
+     * @copyright 2013 Synthetic Thought LLC
+     */
+    class Easy_Pie_MM_Constants {
+        //const OPTIONS_GROUP_NAME = 'easy-pie-mm-options-group';
 
+        const OPTION_NAME = 'easy-pie-mm-options';
+        const MAIN_PAGE_KEY = 'easy-pie-mm-main-page';
+        const PLUGIN_SLUG = 'easy-pie-maintenance-mode';
+        const PLUGIN_VERSION = "0.6.0"; // RSR Version
+
+        /* Pseudo constants */
+
+        public static $PLUGIN_DIR;
+
+        public static function init() {
+
+            $__dir__ = dirname(__FILE__);
+            
+            self::$PLUGIN_DIR = $__dir__ . "../" . self::PLUGIN_SLUG;
+        }
+
+    }
+
+    Easy_Pie_MM_Constants::init();
+}
 ?>

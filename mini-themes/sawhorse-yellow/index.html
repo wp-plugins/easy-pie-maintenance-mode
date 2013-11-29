@@ -1,16 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+    <!-- 
+         'Sawhorse Yellow' Mini-Theme running on Easy Pie Maintenance Mode Plugin
+         easypiewp.com
+    -->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>{{title}}</title>
 
         <link href="./css/style.css" media="all" rel="stylesheet" type="text/css" />
 
-
+        <style type="text/css">
+            {{css}}
+        </style>
     </head>
 
     <body>
-
 
         <div class="wrapper">
 
@@ -23,28 +28,31 @@
                 </div>
 
                 <div class="image-logo">
-                    <div class="toLeft">
+                    <div class="toLeft first">
                         <img src="./images/maintenance.png" />
                     </div>
-                    <div class="toMiddle">
-                        <img id="logo-img" src="{{logo_url}}" />
+                    <div class="toLeft second">
+                        <!--                    <a href="#"><img src="./images/logo.png" /></a>-->
+                        <a href="#"><img id="logo-img" src="{{logo_url}}" /></a>
                     </div>
-
+                    <div class="toRight">
+                        <a href="#"><img src="./images/alert.png" /></a>
+                    </div>
                     <div class="clear"></div>
                 </div>
 
                 <div class="content-wrapper">
-                    <div class="title">
+                    <div class="headline">
                         {{headline}}
                     </div>
-                    <div class="content">    
+                    <div class="content">
                         {{message}}
                     </div>
                 </div>
 
                 <!--            <div class="footer">
                                 © 2013 Synthetic Thought LLC. All Rights Reserved. <a href="http://easypiewp.com" target="_blank">Designd by: Easy Pie WP</a> 
-                            </div>-->
+                            </div>-->        
             </div>
 
         </div>
@@ -55,22 +63,23 @@
               
                 var body = document.getElementsByTagName('body');
                 
-                body[0].style.background = "#202020";
-
-
-                var image = document.getElementById("logo-img");
+                body[0].style.background = "#aac822";
+            }
+                     
+            var image = document.getElementById("logo-img");
          
-                function ezp_hideImage() {
-                    image.style.display = "none";
-                }                                                                
+            function ezp_hideImage() {
+                image.style.display = "none";
+            }                                                                
                 
-                if(image.getAttribute('src') == '') {
+            if(image.getAttribute('src') == '') {
                         
-                    ezp_hideImage();
-                }
+                ezp_hideImage();
+            }
                 
-                image.addEventListener('error', ezp_hideImage, true);            }
-        </script>
+            image.addEventListener('error', ezp_hideImage, true);
+            
+        </script>    
 
     </body>
 </html>

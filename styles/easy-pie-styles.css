@@ -6,14 +6,22 @@
         Purpose of the stylesheet follows.
 */
 
-#icon-easy-pie-mm {
+#icon-easy-pie-maintenance-mode {
     background: transparent url( '../images/easy-pie-mm-logo32.png' ) no-repeat;
 }
 
-.bx-wrapper { margin: 0 0 60px 0 }
+/*.bx-viewport { border-bottom: solid #AAA 1px; border-top: solid #AAA 1px;}*/
 
+.bx-wrapper { margin: 0 0 20px 0!important }
+#easy-pie-mm-bxslider-pager img { margin-top:-10px; margin-right:1px; border: 1px solid #AAA; height:71px; width:98%;}
+
+.bx-prev { left: -45px!important;}
+.bx-next { right: -45px!important;}
+
+/*
+old pager
 #easy-pie-mm-bxpager {
-	/*text-align: center;*/
+	text-align: center;
     max-width: 100%;
 	margin-top: -44px;
 }
@@ -32,5 +40,7 @@
 #easy-pie-mm-bxpager a:hover img,
 #easy-pie-mm-bxpager a.active img {
 	border: solid #5280DD 2px;
-}
+}*/
+
+
 
