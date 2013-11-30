@@ -58,9 +58,10 @@
         </div>
 
         <script type="text/javascript">
-            if(navigator.appName == 'Microsoft Internet Explorer') {
-              
-              
+            // Internet Explorer has problems with the graphical background on larger resolutions so just getting rid of it for that browser
+            var isIE = ((navigator.appName == 'Microsoft Internet Explorer') || ((navigator.appName == 'Netscape') && (new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null)));
+
+            if(isIE) {                           
                 var body = document.getElementsByTagName('body');
                 
                 body[0].style.background = "#aac822";

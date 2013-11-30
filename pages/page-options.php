@@ -37,9 +37,9 @@
                         
                         <td colspan="2">
                             <?php
-                            $format = "<p><a style='font-size:small' target='_blank' href='%s'>%s</a></p>";
+                            $format = "<p><a style='font-size:11px' target='_blank' href='%s'>%s</a></p>";
 
-                            $resolved = sprintf($format, "http://easypiewp.com/how-to-create-maintenance-mode-theme/", Easy_Pie_MM_Utility::__('Create your own mini-theme') );        
+                            $resolved = sprintf($format, "http://easypiewp.com/how-to-create-maintenance-mode-theme/", Easy_Pie_MM_Utility::__('How to create a mini-theme for yourself or others') );        
 
                             Easy_Pie_MM_Utility::_e($resolved);
                             ?>

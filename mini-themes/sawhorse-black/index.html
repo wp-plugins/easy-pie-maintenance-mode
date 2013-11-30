@@ -56,26 +56,27 @@
         </div>
 
         <script type="text/javascript">
-            if(navigator.appName == 'Microsoft Internet Explorer') {
-              
-              
+            // Internet Explorer has problems with the graphical background on larger resolutions so just getting rid of it for that browser
+            var isIE = ((navigator.appName == 'Microsoft Internet Explorer') || ((navigator.appName == 'Netscape') && (new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null)));
+
+            if(isIE) {                                 
                 var body = document.getElementsByTagName('body');
                 
                 body[0].style.background = "#202020";
+            }
 
-
-                var image = document.getElementById("logo-img");
+            var image = document.getElementById("logo-img");
          
-                function ezp_hideImage() {
-                    image.style.display = "none";
-                }                                                                
+            function ezp_hideImage() {
+                image.style.display = "none";
+            }                                                                
                 
-                if(image.getAttribute('src') == '') {
+            if(image.getAttribute('src') == '') {
                         
-                    ezp_hideImage();
-                }
+                ezp_hideImage();
+            }
                 
-                image.addEventListener('error', ezp_hideImage, true);            }
+            image.addEventListener('error', ezp_hideImage, true);            
         </script>
 
     </body>
