@@ -32,26 +32,26 @@ Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image
 -or-
 
 1. Download the .zip package
-1. Unzip into the subdirectory ‘easy-pie-maintenance-mode’ within your local WordPress plugins directory
+1. Unzip into the subdirectory 'easy-pie-maintenance-mode' within your local WordPress plugins directory
 1. Refresh plugin page and activate plugin
 1. Configure plugin using *settings* link under plugin name or by going to Settings/Maintenance mode
 
 == Frequently Asked Questions ==
 
-= Why is my site is still viewable even though I’ve turned on maintenance mode? =
-Maintenance mode is only shown to visitors who are not logged in. The easiest way to check things yourself is view your site with a different browser type than the one you’re logged in with (i.e. if you’re logged in with Chrome, view the site in Firefox or Internet Explorer or vice versa). 
+= Why is my site is still viewable even though I've turned on maintenance mode? =
+Maintenance mode is only shown to visitors who are not logged in. The easiest way to check things yourself is view your site with a different browser type than the one you're logged in with (i.e. if you're logged in with Chrome, view the site in Firefox or Internet Explorer or vice versa). 
 
 Alternatively, you can log our or view the site in incognito/private mode with an instance of the same browser type.
 
-= What happens if a search engine hits my site while it’s in maintenance mode? =
+= What happens if a search engine hits my site while it's in maintenance mode? =
 
-The plugin returns a ’503' status with ‘retry later’ HTTP header when in maintenance mode. This lets search engines know that your site is temporarily down and to come back 24 hours later.
+The plugin returns a '503' status with 'retry later' HTTP header when in maintenance mode. This lets search engines know that your site is temporarily down and to come back 24 hours later.
 
 = How can I create a new mini-theme? =
 
 The page ['How to create a Maintenance Mode Theme'](http://easypiewp.com/how-to-create-maintenance-mode-theme) describes the process.
 
-= I can’t get out of maintenance mode. Help! =
+= I can't get out of maintenance mode. Help! =
 
 Every once in a great while other plugins installed on a system can interact with Maintenance Mode to prevent access to wp-admin. If you find yourself in this unfortunate situation, use the maintenance mode manual override.
 
@@ -61,12 +61,12 @@ Simply add the following line to your wp-config.php file:
 
 Afterward either uninstall or reconfigure the conflicting plugins.
 
-If you aren’t comfortable doing this or are unsure how to do this, [please contact me](mailto:bob@easypiewp.com) and I’ll be happy to walk you through the process.
+If you aren't comfortable doing this or are unsure how to do this, [please contact me](mailto:bob@easypiewp.com) and I'll be happy to walk you through the process.
 
 = I found a bug or have seen other plugins interfere with Maintenance Mode. What should I do? =
 
 Please capture as much information you can about your system, specifically use the error log to gather new information if you are comfortable. The [Easy Pie Error Log Guide](http://easypiewp.com/quickly-diagnose-wordpress-problems-using-error-log/) outlines how to do this.
-Then, please [let me know](mailto:bob@easypiewp.com) what’s going on, with as much detail as you have.
+Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as much detail as you have.
 
 == Screenshots ==
  
