@@ -1,24 +1,27 @@
 === Easy Pie Maintenance Mode ===
 Contributors: bobriley
-Donate link: http://easypiewp.com
+Donate link: http://easypiewp.com/donate/
 Tags: maintenance, admin, administration, construction, under construction, maintenance mode, offline, unavailable, launch
 Requires at least: 3.5
-Tested up to: 3.7
+Tested up to: 3.7.1
 Stable tag: 0.5.1
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Let website visitors know your site is temporarily down while you're working on it.
+Easily let website visitors know your site is temporarily down while you're working on it.
 
 == Description ==
 Need to let your visitors know your site is temporarily down or is under construction? The Easy Pie maintenance mode plugin makes it easy. 
 
-### Features
+### Basic Features
 * **Simple.** No confusing options or complex setup
 * **Mini themes.** Includes four professionally-designed, responsive mini-themes
 * **Pre-styled text.** Title, header, headline and message text gets styled without requiring HTML or CSS
 * **Add your own logo.** Easily add your own logo using the WordPress Media Library.
-* **Expandable.** Modular architecture allows for easy addition of future mini-themes.
+
+### Advanced Features
+* **Custom CSS.** Easily add CSS from the Admin page to customize a mini-theme.
+* **User Mini Themes.** Change the built-in themes or create your own mini-themes from scratch.
 
 Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image viewer.
 == Installation ==
@@ -29,17 +32,41 @@ Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image
 -or-
 
 1. Download the .zip package
-1. Unzip into the subdirectory "easy-pie-maintenance-mode" within your local WordPress plugins directory
+1. Unzip into the subdirectory ‘easy-pie-maintenance-mode’ within your local WordPress plugins directory
 1. Refresh plugin page and activate plugin
 1. Configure plugin using *settings* link under plugin name or by going to Settings/Maintenance mode
 
 == Frequently Asked Questions ==
 
-= What happens if a search engine hits my site while it's in maintenance mode? =
-The plugin returns a '503' status with 'retry later' HTTP header when in maintenance mode. This lets search engines know that your site is temporarily down and to come back 24 hours later.
+= Why is my site is still viewable even though I’ve turned on maintenance mode? =
+Maintenance mode is only shown to visitors who are not logged in. The easiest way to check things yourself is view your site with a different browser type than the one you’re logged in with (i.e. if you’re logged in with Chrome, view the site in Firefox or Internet Explorer or vice versa). 
 
-= Can I create my own mini-theme? =
-In version 0.5, there are ways of doing it, but it's not easy for a beginner. I recommend waiting till the next release. If by chance, you have managed to hack a theme, please be aware that since the themes for v0.5 reside in the plugins directory that all themes will be wiped and reinstalled during the next upgrade so make sure you create a backup of your hacked theme before performing the next upgrade. The next version will not have this problem - user themes will be retained between updates.
+Alternatively, you can log our or view the site in incognito/private mode with an instance of the same browser type.
+
+= What happens if a search engine hits my site while it’s in maintenance mode? =
+
+The plugin returns a ’503' status with ‘retry later’ HTTP header when in maintenance mode. This lets search engines know that your site is temporarily down and to come back 24 hours later.
+
+= How can I create a new mini-theme? =
+
+The page ['How to create a Maintenance Mode Theme'](http://easypiewp.com/how-to-create-maintenance-mode-theme) describes the process.
+
+= I can’t get out of maintenance mode. Help! =
+
+Every once in a great while other plugins installed on a system can interact with Maintenance Mode to prevent access to wp-admin. If you find yourself in this unfortunate situation, use the maintenance mode manual override.
+
+Simply add the following line to your wp-config.php file:
+
+**define('EASY_PIE_MM_DISABLE', true);**
+
+Afterward either uninstall or reconfigure the conflicting plugins.
+
+If you aren’t comfortable doing this or are unsure how to do this, [please contact me](mailto:bob@easypiewp.com) and I’ll be happy to walk you through the process.
+
+= I found a bug or have seen other plugins interfere with Maintenance Mode. What should I do? =
+
+Please capture as much information you can about your system, specifically use the error log to gather new information if you are comfortable. The [Easy Pie Error Log Guide](http://easypiewp.com/quickly-diagnose-wordpress-problems-using-error-log/) outlines how to do this.
+Then, please [let me know](mailto:bob@easypiewp.com) what’s going on, with as much detail as you have.
 
 == Screenshots ==
  
@@ -48,6 +75,14 @@ In version 0.5, there are ways of doing it, but it's not easy for a beginner. I 
 
 == Changelog ==
 
+= 0.6.0 =
+* Added ability to create custom mini themes
+* Added ability to add custom styling to existing mini themes
+* Added notification to prevent you from accidentally leaving your site in maintenance mode.
+* Added captions to mini-themes
+* Fixed compatibility with PHP 5.2
+* Misc code cleanup
+
 = 0.5.1 =
 * Fix for PHP 5.2.x
 
@@ -55,6 +90,9 @@ In version 0.5, there are ways of doing it, but it's not easy for a beginner. I 
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.0 =
+* This version adds custom themes, custom CSS, a notification that your site is in maintenance mode, PHP 5.2 compatibility and small bug fixes. Note: If you have hacked an existing theme please back it up before update because the v0.5 plugin directory is completely wiped on update.
 
 = 0.5.1 =
 * Small fix for PHP 5.2.x. If you aren't running PHP 5.2.x you don't need this although it won't hurt anything if you update anyway.
