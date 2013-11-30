@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Pie Maintenance Mode\n"
-"POT-Creation-Date: 2013-11-29 10:42-0700\n"
-"PO-Revision-Date: 2013-11-29 10:42-0700\n"
+"POT-Creation-Date: 2013-11-29 17:36-0700\n"
+"PO-Revision-Date: 2013-11-29 17:38-0700\n"
 "Last-Translator: \n"
 "Language-Team: Easy Pie WP <bob@easypiewp.com>\n"
 "Language: English\n"
@@ -105,8 +105,8 @@ msgid "Update custom CSS when switching mini-themes."
 msgstr "Update custom CSS when switching mini-themes."
 
 #: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:42
-msgid "How to create a mini-theme for yourself or others"
-msgstr "How to create a mini-theme for yourself or others"
+msgid "How to create a mini-theme for yourself or the community"
+msgstr "How to create a mini-theme for yourself or the community"
 
 #: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:55
 msgid "Comment or question?"
