@@ -67,11 +67,12 @@ easyPie.MM.getCookie = function(c_name)
     
 
 jQuery(document).ready(function($) {
-    var displayIndex = $("#easy-pie-mm-theme").attr("displayIndex");
-             
+    $(".form-table img").css({"display":"block"});        
     
+    var displayIndex = $("#easy-pie-mm-theme").attr("displayIndex");
+                
     var easyPieMMScrubSlides  = function() {
-        
+                       
         var displayIndex = $("#easy-pie-mm-theme").attr("displayIndex");   
         
         //   $("#easy-pie-mm-bxslider-pager img").css("border-right", "1px solid #CCC").css("border-left", "1px solid #CCC").css("margin-top", "-10px").css("margin-left", "-2px");
@@ -119,6 +120,8 @@ jQuery(document).ready(function($) {
         onSlideNext: easyPieMMScrubSlides,
         onSlidePrev: easyPieMMScrubSlides
     });
+    
+    
 
     easyPieMMScrubSlides();   
     

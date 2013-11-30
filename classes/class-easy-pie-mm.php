@@ -463,7 +463,7 @@ if (!class_exists('Easy_Pie_MM')) {
                 }
                 ?>
                     <li>                                                
-                        <img idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" title="<?php echo $caption_text; ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
+                        <img style="display:none" idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" title="<?php echo $caption_text; ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
                     </li>
                     <?php
                     $displayIndex++;
@@ -498,7 +498,7 @@ if (!class_exists('Easy_Pie_MM')) {
                 }
                 ?>
                     <li>                                                
-                        <img idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
+                        <img style="display:none" idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
                     </li>
                     <?php
                     $displayIndex++;
