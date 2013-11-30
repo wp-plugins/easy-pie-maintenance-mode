@@ -164,13 +164,13 @@ if (!class_exists('Easy_Pie_MM')) {
         public static function activate() {
 
             Easy_Pie_MM_Utility::debug("activate");
-
+            
             if(file_exists(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY) == FALSE) {            
                 
                 $dirCreate = mkdir(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY, 0755, true);
-            }
-
-            Easy_Pie_MM_Utility::debug(Easy_Pie_MM_Utility::__("Tried to create ") . Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY . "=" . $dirCreate);
+                
+                Easy_Pie_MM_Utility::debug(Easy_Pie_MM_Utility::__("Tried to create ") . Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY . "=" . $dirCreate);
+            }            
         }
 
         public static function deactivate() {
