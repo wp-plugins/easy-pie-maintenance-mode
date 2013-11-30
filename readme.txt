@@ -75,6 +75,9 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 == Changelog ==
 
+= 0.6.1 =
+* A couple small bug fixes
+
 = 0.6.0 =
 * Added ability to create custom mini themes
 * Added ability to add custom styling to existing mini themes
@@ -90,6 +93,9 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.1 =
+* Made screen draw smoother, small bug fixes
 
 = 0.6.0 =
 * This version adds custom themes, custom CSS, a notification that your site is in maintenance mode, PHP 5.2 compatibility and small bug fixes. Note: If you have hacked an existing theme please back it up before update because the v0.5 plugin directory is completely wiped on update.
