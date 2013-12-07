@@ -38,18 +38,24 @@ Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image
 
 == Frequently Asked Questions ==
 
-= Why is my site is still viewable even though I've turned on maintenance mode? =
+= How can I create a new mini-theme? =
+
+The page ['How to create a Maintenance Mode Theme'](http://easypiewp.com/how-to-create-maintenance-mode-theme) describes the process.
+
+= Why is my site is still viewable? =
 Maintenance mode is only shown to visitors who are not logged in. The easiest way to check things yourself is view your site with a different browser type than the one you're logged in with (i.e. if you're logged in with Chrome, view the site in Firefox or Internet Explorer or vice versa). 
 
-Alternatively, you can log our or view the site in incognito/private mode with an instance of the same browser type.
+Alternatively, you can log out or view the site in incognito/private mode with an instance of the same browser type.
+
+= My custom theme changed after plugin upgrade!? =
+
+Make sure your theme is in the user theme directory and not in the plugins directory where the built-in themes are. Maintenance Mode pulls themes from both the plugins directory AND the user theme directory, however only the user theme directory is preserved between updates.
+
+Therefore, if you want to doctor a theme you'll need to first copy it from the plugins directory into the user theme directory, as explained in ['How to create a Maintenance Mode Theme'](http://easypiewp.com/how-to-create-maintenance-mode-theme).
 
 = What happens if a search engine hits my site while it's in maintenance mode? =
 
 The plugin returns a '503' status with 'retry later' HTTP header when in maintenance mode. This lets search engines know that your site is temporarily down and to come back 24 hours later.
-
-= How can I create a new mini-theme? =
-
-The page ['How to create a Maintenance Mode Theme'](http://easypiewp.com/how-to-create-maintenance-mode-theme) describes the process.
 
 = I can't get out of maintenance mode. Help! =
 
@@ -63,7 +69,7 @@ Afterward either uninstall or reconfigure the conflicting plugins.
 
 If you aren't comfortable doing this or are unsure how to do this, [please contact me](mailto:bob@easypiewp.com) and I'll be happy to walk you through the process.
 
-= I found a bug or have seen other plugins interfere with Maintenance Mode. What should I do? =
+= How do I report a bug? =
 
 Please capture as much information you can about your system, specifically use the error log to gather new information if you are comfortable. The [Easy Pie Error Log Guide](http://easypiewp.com/quickly-diagnose-wordpress-problems-using-error-log/) outlines how to do this.
 Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as much detail as you have.
@@ -105,3 +111,4 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 = 0.5 =
 * Initial release
+
