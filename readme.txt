@@ -81,6 +81,10 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 == Changelog ==
 
+= 0.6.2 =
+* Bugfix: User theme directory wasn't created on startup
+* Bugfix: Hiding logo if not defined
+
 = 0.6.1 =
 * A couple small bug fixes
 
@@ -100,15 +104,17 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 == Upgrade Notice ==
 
+= 0.6.2 =
+Fixed upgrade bug that prevented viewing themes on admin panel.
+
 = 0.6.1 =
-* Made screen draw smoother, small bug fixes
+Made screen draw smoother, small bug fixes
 
 = 0.6.0 =
-* This version adds custom themes, custom CSS, a notification that your site is in maintenance mode, PHP 5.2 compatibility and small bug fixes. Note: If you have hacked an existing theme please back it up before update because the v0.5 plugin directory is completely wiped on update.
+This version adds custom themes, custom CSS, a notification that your site is in maintenance mode, PHP 5.2 compatibility and small bug fixes. Note: If you have hacked an existing theme please back it up before update because the v0.5 plugin directory is completely wiped on update.
 
 = 0.5.1 =
-* Small fix for PHP 5.2.x. If you aren't running PHP 5.2.x you don't need this although it won't hurt anything if you update anyway.
+Small fix for PHP 5.2.x. If you aren't running PHP 5.2.x you don't need this although it won't hurt anything if you update anyway.
 
 = 0.5 =
-* Initial release
-
+Initial release

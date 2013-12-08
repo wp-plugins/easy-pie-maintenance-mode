@@ -67,7 +67,7 @@ easyPie.MM.getCookie = function(c_name)
     
 
 jQuery(document).ready(function($) {
-    $(".form-table img").css({"display":"block"});        
+    $("#theme-section img").css({"display":"block"});        
     
     var displayIndex = $("#easy-pie-mm-theme").attr("displayIndex");
                 

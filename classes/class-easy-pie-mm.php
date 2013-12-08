@@ -1,5 +1,4 @@
 <?php
-
 /*
   Easy Pie Maintenance Mode Plugin
   Copyright (C) 2013, Synthetic Thought LLC
@@ -8,7 +7,7 @@
   Easy Pie Maintenance Mode Plugin is distributed under the GNU General Public License, Version 3,
   June 2007. Copyright (C) 2007 Free Software Foundation, Inc., 51 Franklin
   St, Fifth Floor, Boston, MA 02110, USA
-  
+
   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
   WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -19,7 +18,7 @@
   ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+ */
 
 require_once("class-easy-pie-utility.php");
 require_once("class-easy-pie-plugin-base.php");
@@ -117,8 +116,8 @@ if (!class_exists('Easy_Pie_MM')) {
                         $manifest = Easy_Pie_MM_Utility::load_manifest($active_manifest_path);
                     }
 
-                   // $filename = $manifest->dir . "/" . $manifest->page;
-                    
+                    // $filename = $manifest->dir . "/" . $manifest->page;
+
                     $contents = file_get_contents($manifest->dir . "/" . $manifest->page);
                     $contents = $this->replace_page_template_fields($contents, $manifest->mini_theme_url);
 
@@ -164,13 +163,6 @@ if (!class_exists('Easy_Pie_MM')) {
         public static function activate() {
 
             Easy_Pie_MM_Utility::debug("activate");
-            
-            if(file_exists(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY) == FALSE) {            
-                
-                $dirCreate = mkdir(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY, 0755, true);
-                
-                Easy_Pie_MM_Utility::debug(Easy_Pie_MM_Utility::__("Tried to create ") . Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY . "=" . $dirCreate);
-            }            
         }
 
         public static function deactivate() {
@@ -227,6 +219,7 @@ if (!class_exists('Easy_Pie_MM')) {
 
             register_setting(Easy_Pie_MM_Constants::MAIN_PAGE_KEY, Easy_Pie_MM_Constants::OPTION_NAME, array($this, 'validate_options'));
 
+            $this->init_user_theme_directory();
             $this->add_settings_sections();
             $this->add_filters();
         }
@@ -253,6 +246,16 @@ if (!class_exists('Easy_Pie_MM')) {
             $optionArray = get_option(Easy_Pie_MM_Constants::OPTION_NAME);
 
             return $optionArray[strtolower($subkey)];
+        }
+
+        private function init_user_theme_directory() {
+            
+            if (file_exists(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY) == FALSE) {
+                
+                $dirCreate = mkdir(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY, 0755, true);
+
+                Easy_Pie_MM_Utility::debug(Easy_Pie_MM_Utility::__("Tried to create ") . Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY . "=" . $dirCreate);
+            }
         }
 
         // <editor-fold defaultstate="collapsed" desc=" Settings Logic ">
@@ -355,21 +358,20 @@ if (!class_exists('Easy_Pie_MM')) {
             ?>
             <div>
                 <input style="margin-right:5px;" value="1" id="<?php echo $id; ?>" type="checkbox" name="<?php echo $optionExpression; ?>" <?php echo $checkedText; ?> >Yes</input>
-            <?php
-            if (isset($small_text)) {
-                echo "<p><small>" . $small_text . "</small></p>";
-            }
-            ?>
-            </div>            
                 <?php
-            }
-
-            
-            public function render_logo_field() {
-                $options = get_option(Easy_Pie_MM_Constants::OPTION_NAME);
-                $optionExpression = Easy_Pie_MM_Constants::OPTION_NAME . "[logo_url]";
-                $currentValue = $options["logo_url"];
+                if (isset($small_text)) {
+                    echo "<p><small>" . $small_text . "</small></p>";
+                }
                 ?>
+            </div>            
+            <?php
+        }
+
+        public function render_logo_field() {
+            $options = get_option(Easy_Pie_MM_Constants::OPTION_NAME);
+            $optionExpression = Easy_Pie_MM_Constants::OPTION_NAME . "[logo_url]";
+            $currentValue = $options["logo_url"];
+            ?>
 
             <div>
                 <input id="easy-pie-mm-field-logo" type="text" name="<?php echo $optionExpression; ?>" size="58" value="<?php echo $currentValue; ?>" />
@@ -381,7 +383,6 @@ if (!class_exists('Easy_Pie_MM')) {
             } else {
                 $displayModifier = "";
             }
-            
             ?>
 
                 <div >
@@ -398,7 +399,7 @@ if (!class_exists('Easy_Pie_MM')) {
 
         public function render_theme_section() {
             //       echo 'TODO: Theme is used to change what is displayed. Blah blah blah..';
-            echo '<div id="bob">';
+            echo '<div id="theme-section">';
         }
 
         public function render_template_fields_section() {
@@ -409,18 +410,18 @@ if (!class_exists('Easy_Pie_MM')) {
 
         private function get_template_path($page_template_key) {
 
-            
+
             $__dir__ = dirname(__FILE__);
-            
-            
+
+
             return $__dir__ . "../mini-themes/" . $page_template_key;
         }
 
         public function render_active_theme_selector($args) {
 
-            
+
             $__dir__ = dirname(__FILE__);
-                        
+
             $path = $__dir__ . "../mini-themes/";
 
             $dirs = glob($path . "*", GLOB_ONLYDIR);
@@ -449,7 +450,7 @@ if (!class_exists('Easy_Pie_MM')) {
                     $caption_text = $this->__('User Defined:') . $manifest->title;
                 } else {
 
-                    $caption_text = $manifest->title . ' ' .$this->__('by') . " <a style='color:#DDD' target='_blank' href='" . $manifest->website_url . "'>" . $manifest->author_name . "</a>";
+                    $caption_text = $manifest->title . ' ' . $this->__('by') . " <a style='color:#DDD' target='_blank' href='" . $manifest->website_url . "'>" . $manifest->author_name . "</a>";
                 }
 
 
@@ -468,10 +469,10 @@ if (!class_exists('Easy_Pie_MM')) {
                     <li>                                                
                         <img style="display:none" idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" title="<?php echo $caption_text; ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
                     </li>
-                    <?php
-                    $displayIndex++;
-                }
-                ?>
+                <?php
+                $displayIndex++;
+            }
+            ?>
                 <!--                ... (repeat for every image in the gallery)-->
             </ul>
 
@@ -503,72 +504,72 @@ if (!class_exists('Easy_Pie_MM')) {
                     <li>                                                
                         <img style="display:none" idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
                     </li>
-                    <?php
-                    $displayIndex++;
-                }
-                ?>                
+                <?php
+                $displayIndex++;
+            }
+            ?>                
             </ul>
 
             <input displayIndex="<?php echo $startingIndex; ?>" style="visibility:hidden" id="<?php echo $id; ?>" name="<?php echo $optionExpression; ?>" value="<?php echo $currentValue; ?>"/>
-                <?php
-            }
+            <?php
+        }
 
-            public function validate_options($raw_input_array) {
+        public function validate_options($raw_input_array) {
 
-                // Create our array for storing the validated options  
-                //$output = array();
-                $output = get_option(Easy_Pie_MM_Constants::OPTION_NAME);
+            // Create our array for storing the validated options  
+            //$output = array();
+            $output = get_option(Easy_Pie_MM_Constants::OPTION_NAME);
 
-                $this->scrub_checkbox_value($raw_input_array, 'enabled');
-                $this->scrub_checkbox_value($raw_input_array, '503_redirect');
+            $this->scrub_checkbox_value($raw_input_array, 'enabled');
+            $this->scrub_checkbox_value($raw_input_array, '503_redirect');
 
-                // Loop through each of the incoming options  
-                foreach ($raw_input_array as $key => $value) {
+            // Loop through each of the incoming options  
+            foreach ($raw_input_array as $key => $value) {
 
-                    // Check to see if the current option has a value. If so, process it.  
-                    if (isset($raw_input_array[$key])) {
+                // Check to see if the current option has a value. If so, process it.  
+                if (isset($raw_input_array[$key])) {
 
-                        // Strip all HTML and PHP tags and properly handle quoted strings  
-                        //$output[$key] = strip_tags(stripslashes($raw_input_array[$key]));
-                        $output[$key] = $raw_input_array[$key];
-                    }
-                }
-
-                //  return apply_filters(Easy_Pie_MM_Constants::MAIN_PAGE_KEY, $output, $raw_input_array);
-                return $output;
-            }
-
-            private function scrub_checkbox_value(&$array, $key) {
-
-                if (!array_key_exists($key, $array)) {
-
-                    $array[$key] = false;
+                    // Strip all HTML and PHP tags and properly handle quoted strings  
+                    //$output[$key] = strip_tags(stripslashes($raw_input_array[$key]));
+                    $output[$key] = $raw_input_array[$key];
                 }
             }
 
-            // </editor-fold>
+            //  return apply_filters(Easy_Pie_MM_Constants::MAIN_PAGE_KEY, $output, $raw_input_array);
+            return $output;
+        }
 
-            public function add_to_admin_menu() {
+        private function scrub_checkbox_value(&$array, $key) {
 
-                // RSR TODO: Localize main page title and menu entry
-                //$page_hook_suffix = add_options_page("Easy Pie Maintenance Mode", "Maintenance Mode", "manage_options", Easy_Pie_MM_Constants::MAIN_PAGE_KEY, array($this, 'display_options_page'));
-                $page_hook_suffix = add_options_page("Easy Pie Maintenance Mode", "Maintenance Mode", "manage_options", Easy_Pie_MM_Constants::PLUGIN_SLUG, array($this, 'display_options_page'));
+            if (!array_key_exists($key, $array)) {
 
-                add_action('admin_print_scripts-' . $page_hook_suffix, array($this, 'enqueue_scripts'));
-
-                //Apply Styles
-                add_action('admin_print_styles-' . $page_hook_suffix, array($this, 'enqueue_styles'));
+                $array[$key] = false;
             }
+        }
 
-            // </editor-fold>
+        // </editor-fold>
 
-            function display_options_page() {
-               
-                $__dir__ = dirname(__FILE__);
-                        
-                include($__dir__ . '/../pages/page-options.php');
-            }
+        public function add_to_admin_menu() {
 
+            // RSR TODO: Localize main page title and menu entry
+            //$page_hook_suffix = add_options_page("Easy Pie Maintenance Mode", "Maintenance Mode", "manage_options", Easy_Pie_MM_Constants::MAIN_PAGE_KEY, array($this, 'display_options_page'));
+            $page_hook_suffix = add_options_page("Easy Pie Maintenance Mode", "Maintenance Mode", "manage_options", Easy_Pie_MM_Constants::PLUGIN_SLUG, array($this, 'display_options_page'));
+
+            add_action('admin_print_scripts-' . $page_hook_suffix, array($this, 'enqueue_scripts'));
+
+            //Apply Styles
+            add_action('admin_print_styles-' . $page_hook_suffix, array($this, 'enqueue_styles'));
+        }
+
+        // </editor-fold>
+
+        function display_options_page() {
+
+            $__dir__ = dirname(__FILE__);
+
+            include($__dir__ . '/../pages/page-options.php');
         }
 
     }
+
+}
