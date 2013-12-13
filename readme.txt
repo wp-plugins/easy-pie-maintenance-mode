@@ -24,6 +24,7 @@ Need to let your visitors know your site is temporarily down or is under constru
 * **User Mini Themes.** Change the built-in themes or create your own mini-themes from scratch.
 
 Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image viewer.
+
 == Installation ==
 
 1. Click Plugins/Add New from the WordPress admin panel
