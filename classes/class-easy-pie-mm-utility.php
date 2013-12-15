@@ -1,4 +1,5 @@
 <?php
+
 /*
   Easy Pie Maintenance Mode Plugin
   Copyright (C) 2013, Synthetic Thought LLC
@@ -7,7 +8,7 @@
   Easy Pie Maintenance Mode Plugin is distributed under the GNU General Public License, Version 3,
   June 2007. Copyright (C) 2007 Free Software Foundation, Inc., 51 Franklin
   St, Fifth Floor, Boston, MA 02110, USA
-  
+
   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
   WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -18,7 +19,7 @@
   ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+ */
 
 require_once("class-easy-pie-mm-constants.php");
 
@@ -42,7 +43,7 @@ if (!class_exists('Easy_Pie_MM_Utility')) {
         public static function init() {
 
             $__dir__ = dirname(__FILE__);
-            
+
             self::$MINI_THEMES_STANDARD_DIRECTORY = $__dir__ . "/../mini-themes/";
             self::$MINI_THEMES_USER_DIRECTORY = (WP_CONTENT_DIR . "/" . Easy_Pie_MM_Constants::PLUGIN_SLUG . "/mini-themes/");
 
@@ -109,53 +110,56 @@ if (!class_exists('Easy_Pie_MM_Utility')) {
             $manifest_array = array();
             $dirs = glob($directory . "*", GLOB_ONLYDIR);
 
-            sort($dirs);
+            if ($dirs != FALSE) {
 
-            foreach ($dirs as $dir) {
+                sort($dirs);
 
-                $manifest = null;
-                $manifest_path = $dir . "/manifest.json";
+                foreach ($dirs as $dir) {
 
-                if (file_exists($manifest_path)) {
+                    $manifest = null;
+                    $manifest_path = $dir . "/manifest.json";
 
-                    $manifest_text = file_get_contents($manifest_path);
+                    if (file_exists($manifest_path)) {
 
-                    if ($manifest_text != false) {
+                        $manifest_text = file_get_contents($manifest_path);
 
-                        $manifest = json_decode($manifest_text);
+                        if ($manifest_text != false) {
+
+                            $manifest = json_decode($manifest_text);
+                        } else {
+
+                            self::debug(self::__("problem reading manifest in ") . $dir . "(" . $dirs . ")");
+                        }
                     } else {
 
-                        self::debug(self::__("problem reading manifest in ") . $dir . "(" . $dirs . ")");
+                        // Manifest not present so assumption is they just want a generic mini-theme
+                        $manifest = new stdClass();
+
+                        self::add_property($manifest, 'title', basename($dir));
+                        self::add_property($manifest, 'page', 'index.html');
+                        self::add_property($manifest, 'description', 'User Mini Theme');
+                        self::add_property($manifest, 'author_name', '');
+                        self::add_property($manifest, 'website_url', '');
+                        self::add_property($manifest, 'google_plus_author_url', '');
+                        self::add_property($manifest, 'original_release_date', '2013/01/01');
+                        self::add_property($manifest, 'latest_version_date', '2013/01/01');
+                        self::add_property($manifest, 'version', '1.0.0');
+                        self::add_property($manifest, 'release_notes', '');
+                        self::add_property($manifest, 'screenshot', self::$MINI_THEMES_IMAGES_URL . "user-defined.png");
+                        self::add_property($manifest, 'autodownload', false);
+                        self::add_property($manifest, 'responsive', true);
                     }
-                } else {
 
-                    // Manifest not present so assumption is they just want a generic mini-theme
-                    $manifest = new stdClass();
+                    if ($manifest != null) {
 
-                    self::add_property($manifest, 'title', basename($dir));
-                    self::add_property($manifest, 'page', 'index.html');
-                    self::add_property($manifest, 'description', 'User Mini Theme');
-                    self::add_property($manifest, 'author_name', '');
-                    self::add_property($manifest, 'website_url', '');
-                    self::add_property($manifest, 'google_plus_author_url', '');
-                    self::add_property($manifest, 'original_release_date', '2013/01/01');
-                    self::add_property($manifest, 'latest_version_date', '2013/01/01');
-                    self::add_property($manifest, 'version', '1.0.0');
-                    self::add_property($manifest, 'release_notes', '');
-                    self::add_property($manifest, 'screenshot', self::$MINI_THEMES_IMAGES_URL . "user-defined.png");
-                    self::add_property($manifest, 'autodownload', false);
-                    self::add_property($manifest, 'responsive', true);
-                }
+                        // RSR TODO: Have a way to give each item a unique key if it conflicts..?
+                        self::add_property($manifest, 'key', basename($dir));
+                        self::add_property($manifest, 'dir', $dir);
+                        self::add_property($manifest, 'manifest_path', $manifest_path);
+                        self::add_property($manifest, 'mini_theme_url', $mini_theme_base_url . $manifest->key);
 
-                if ($manifest != null) {
-
-                    // RSR TODO: Have a way to give each item a unique key if it conflicts..?
-                    self::add_property($manifest, 'key', basename($dir));
-                    self::add_property($manifest, 'dir', $dir);
-                    self::add_property($manifest, 'manifest_path', $manifest_path);
-                    self::add_property($manifest, 'mini_theme_url', $mini_theme_base_url . $manifest->key);
-
-                    array_push($manifest_array, $manifest);
+                        array_push($manifest_array, $manifest);
+                    }
                 }
             }
 

@@ -418,14 +418,7 @@ if (!class_exists('Easy_Pie_MM')) {
         }
 
         public function render_active_theme_selector($args) {
-
-
-            $__dir__ = dirname(__FILE__);
-
-            $path = $__dir__ . "../mini-themes/";
-
-            $dirs = glob($path . "*", GLOB_ONLYDIR);
-
+                    
             $options = get_option(Easy_Pie_MM_Constants::OPTION_NAME);
             $subkey = $args['subkey'];
             $id = $args['id'];
