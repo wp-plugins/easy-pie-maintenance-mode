@@ -13,6 +13,7 @@
 /*.bx-viewport { border-bottom: solid #AAA 1px; border-top: solid #AAA 1px;}*/
 
 .bx-wrapper { margin: 0 0 20px 0!important }
+.bx-wrapper .bx-caption span { padding: 5px; padding-bottom:19px;}
 #easy-pie-mm-bxslider-pager img { margin-top:-10px; margin-right:1px; border: 1px solid #AAA; height:71px; width:98%;}
 
 .bx-prev { left: -45px!important;}
