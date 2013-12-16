@@ -82,6 +82,10 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 == Changelog ==
 
+= 0.6.3 =
+* Bug fixes
+* Improved styling for WordPress 3.8
+
 = 0.6.2 =
 * Bugfix: User theme directory wasn't created on startup
 * Bugfix: Hiding logo if not defined
@@ -104,6 +108,9 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.3 =
+Small bug fixes & improved styling for WordPress 3.8
 
 = 0.6.2 =
 Fixed upgrade bug that prevented viewing themes on admin panel.
