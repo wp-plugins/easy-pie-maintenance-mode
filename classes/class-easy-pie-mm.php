@@ -313,7 +313,7 @@ if (!class_exists('Easy_Pie_MM')) {
             $id = $args['id'];
             $optionExpression = Easy_Pie_MM_Constants::OPTION_NAME . "[" . $subkey . "]";
             $currentValue = $options[$subkey];
-            $size = 68;
+            $size = 66;
 
             if (array_key_exists('size', $args)) {
                 $size = $args['size'];
@@ -333,7 +333,7 @@ if (!class_exists('Easy_Pie_MM')) {
             $currentValue = $options[$subkey];
             ?>
             <div>
-                <textarea cols="71" rows="5" id="<?php echo $id; ?>" name='<?php echo $optionExpression; ?>'><?php echo $currentValue; ?></textarea>
+                <textarea cols="66" rows="5" id="<?php echo $id; ?>" name='<?php echo $optionExpression; ?>'><?php echo $currentValue; ?></textarea>
                 <p><small><?php $this->_e("HTML tags are allowed. e.g. Add &lt;br/&gt; for break."); ?></small></p>
             </div>             
             <?php

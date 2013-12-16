@@ -21,14 +21,14 @@
             settings_fields(Easy_Pie_MM_Constants::MAIN_PAGE_KEY);
             do_settings_sections(Easy_Pie_MM_Constants::MAIN_PAGE_KEY);
             ?>
-            <div  style="margin-top: 25px; width:614px" class="postbox easy-pie-mm-toggle">
+            <div  style="margin-top: 25px; width:784px" class="postbox easy-pie-mm-toggle">
                 <div class="handlediv" title="Click to toggle" onclick="easyPie.MM.toggleAdvancedBox();"><br></div>
                 <h3 style="height:25px; margin-bottom:0px; padding-left: 10px; padding-top:9px;" class="hndl" onclick="easyPie.MM.toggleAdvancedBox();"><span style="font-weight:bold"><?php Easy_Pie_MM_Utility::_e('Advanced Settings'); ?><span></h3>
                 <table id="easy-pie-mm-advanced" style="display:none" class="form-table">
                     <tr valign="top">
-                        <th scope="row"><?php Easy_Pie_MM_Utility::_e("Custom CSS") ?></th><td>
+                        <th scope="row" style="padding-left:9px;"><?php Easy_Pie_MM_Utility::_e("Custom CSS") ?></th><td>
                             <div>
-                                <textarea cols="70" rows="9" id="easy-pie-mm-field-junk" name="easy-pie-mm-options[css]"><?php echo $option_array["css"]; ?></textarea>
+                                <textarea cols="67" rows="9" id="easy-pie-mm-field-junk" name="easy-pie-mm-options[css]"><?php echo $option_array["css"]; ?></textarea>
                                 <p><small><strong><?php Easy_Pie_MM_Utility::_e("Page styling varies greatly. ")?></strong><?php Easy_Pie_MM_Utility::_e("Update custom CSS when switching mini-themes."); ?></small></p>
                             </div>             
                         </td>
