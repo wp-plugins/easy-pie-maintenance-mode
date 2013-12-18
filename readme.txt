@@ -82,6 +82,9 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 == Changelog ==
 
+= 0.6.4 =
+* Bug fix for WordPress 3.5.1 compatibility
+
 = 0.6.3 =
 * Bug fixes
 * Improved styling for WordPress 3.8
@@ -108,6 +111,9 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.4 =
+WordPress 3.5.1 compatibility fix
 
 = 0.6.3 =
 Small bug fixes & improved styling for WordPress 3.8

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Pie Maintenance Mode\n"
-"POT-Creation-Date: 2013-11-29 17:36-0700\n"
-"PO-Revision-Date: 2013-11-29 17:38-0700\n"
+"POT-Creation-Date: 2013-12-18 05:59-0700\n"
+"PO-Revision-Date: 2013-12-18 05:59-0700\n"
 "Last-Translator: \n"
 "Language-Team: Easy Pie WP <bob@easypiewp.com>\n"
 "Language: English\n"
@@ -16,71 +16,71 @@ msgstr ""
 "X-Poedit-SearchPath-0: J:\\xampp171\\htdocs\\ezp\\bobstuff\\plugins\\easy-"
 "pie-maintenance-mode\n"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm-utility.php:128
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm-utility.php:131
 msgid "problem reading manifest in "
 msgstr "Logo"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:82
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:81
 msgid "Maintenance Mode is On"
 msgstr "Maintenance Mode is On"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:130
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:129
 msgid "Problem reading template "
 msgstr "Problem reading template "
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:170
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:258
 msgid "Tried to create "
 msgstr "Tried to create "
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:289
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:296
 msgid "Enabled"
 msgstr "Enabled"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:292
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:299
 msgid "Visuals"
 msgstr "Visuals"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:293
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:300
 msgid "Mini-theme"
 msgstr "Mini-theme"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:296
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:303
 msgid "Fields"
 msgstr "Fields"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:297
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:304
 msgid "Title"
 msgstr "Title"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:298
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:305
 msgid "Header"
 msgstr "Header"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:299
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:306
 msgid "Headline"
 msgstr "Headline"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:300
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:307
 msgid "Message"
 msgstr "Message"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:301
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:308
 msgid "Logo"
 msgstr "Logo"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:331
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:338
 msgid "HTML tags are allowed. e.g. Add &lt;br/&gt; for break."
 msgstr "HTML tags are allowed. e.g. Add &lt;br/&gt; for break."
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:404
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:409
 msgid "All fields are optional"
 msgstr "All fields are optional"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:446
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:444
 msgid "User Defined:"
 msgstr "User Defined:"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:449
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/classes/class-easy-pie-mm.php:447
 msgid "by"
 msgstr "by"
 
@@ -108,17 +108,34 @@ msgstr "Update custom CSS when switching mini-themes."
 msgid "How to create a mini-theme for yourself or the community"
 msgstr "How to create a mini-theme for yourself or the community"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:55
-msgid "Comment or question?"
-msgstr "Comment or question?"
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:54
+msgid "Plugin FAQ"
+msgstr "Plugin FAQ"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:55
-msgid "Email"
-msgstr "Email"
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:56
+msgid "Feature Request"
+msgstr "Feature Request"
 
-#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:55
-msgid "or stop by"
-msgstr "or stop by"
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:58
+msgid "Report Bug"
+msgstr "Report Bug"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:60
+msgid "Write Review"
+msgstr "Write Review"
+
+#: J:\xampp171\htdocs\ezp\bobstuff\plugins\easy-pie-maintenance-mode/pages/page-options.php:62
+msgid "Contact Bob"
+msgstr "Contact Bob"
+
+#~ msgid "Comment or question?"
+#~ msgstr "Comment or question?"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "or stop by"
+#~ msgstr "or stop by"
 
 #~ msgid "Create your own mini-theme. Even distribute it!"
 #~ msgstr "Create your own mini-theme. Even distribute it!"

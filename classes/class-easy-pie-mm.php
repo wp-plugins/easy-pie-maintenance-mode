@@ -179,7 +179,7 @@ if (!class_exists('Easy_Pie_MM')) {
 
         public function enqueue_scripts() {
 
-            $jsRoot = plugins_url("/../js", __FILE__);
+            $jsRoot = plugins_url() . "/" . Easy_Pie_MM_Constants::PLUGIN_SLUG . "/js";
 
             wp_enqueue_script('jquery');
             wp_enqueue_script('jquery-ui-core');
@@ -193,8 +193,9 @@ if (!class_exists('Easy_Pie_MM')) {
          *  enqueue_styles
          *  Loads the required css links only for this plugin  */
         public function enqueue_styles() {
-            $styleRoot = plugins_url("/../styles", __FILE__);
-
+            
+            $styleRoot = plugins_url() . "/" . Easy_Pie_MM_Constants::PLUGIN_SLUG . "/styles";
+            
             wp_register_style('jquery.bxslider.css', $styleRoot . '/jquery.bxslider.css');
             wp_enqueue_style('jquery.bxslider.css');
 
@@ -249,9 +250,9 @@ if (!class_exists('Easy_Pie_MM')) {
         }
 
         private function init_user_theme_directory() {
-            
+
             if (file_exists(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY) == FALSE) {
-                
+
                 $dirCreate = mkdir(Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY, 0755, true);
 
                 Easy_Pie_MM_Utility::debug(Easy_Pie_MM_Utility::__("Tried to create ") . Easy_Pie_MM_Utility::$MINI_THEMES_USER_DIRECTORY . "=" . $dirCreate);
@@ -377,13 +378,13 @@ if (!class_exists('Easy_Pie_MM')) {
                 <input id="easy-pie-mm-field-logo" type="text" name="<?php echo $optionExpression; ?>" size="58" value="<?php echo $currentValue; ?>" />
                 <input id="easy-pie-mm-upload-logo-button" type="button" value="Upload" />
 
-            <?php
-            if (empty($currentValue)) {
-                $displayModifier = "display:none;";
-            } else {
-                $displayModifier = "";
-            }
-            ?>
+                <?php
+                if (empty($currentValue)) {
+                    $displayModifier = "display:none;";
+                } else {
+                    $displayModifier = "";
+                }
+                ?>
 
                 <div >
                     <img id="easy-pie-mm-field-logo-preview" src="<?php echo $currentValue; ?>" style="<?php echo $displayModifier; ?>max-height:170px;max-width:170px;box-shadow: 1px 7px 20px -4px rgba(34,34,34,1);padding: 5px;border: black solid 1px;margin-top: 14px;"/>
@@ -418,7 +419,7 @@ if (!class_exists('Easy_Pie_MM')) {
         }
 
         public function render_active_theme_selector($args) {
-                    
+
             $options = get_option(Easy_Pie_MM_Constants::OPTION_NAME);
             $subkey = $args['subkey'];
             $id = $args['id'];
@@ -428,79 +429,79 @@ if (!class_exists('Easy_Pie_MM')) {
 
             <ul id="easy-pie-mm-bxslider">
 
-            <?php
-            $displayIndex = 0;
-            $startingIndex = 0;
+                <?php
+                $displayIndex = 0;
+                $startingIndex = 0;
 
-            $manifests = Easy_Pie_MM_Utility::get_manifests();
+                $manifests = Easy_Pie_MM_Utility::get_manifests();
 
-            foreach ($manifests as $manifest) {
-                //  $slidePath = plugins_url("../mini-themes/" . $manifest->key . "/" . $manifest->screenshot, __FILE__);
-                $upper_screenshot = strtoupper($manifest->screenshot);
+                foreach ($manifests as $manifest) {
+                    //  $slidePath = plugins_url("../mini-themes/" . $manifest->key . "/" . $manifest->screenshot, __FILE__);
+                    $upper_screenshot = strtoupper($manifest->screenshot);
 
-                if ($manifest->author_name == '') {
+                    if ($manifest->author_name == '') {
 
-                    $caption_text = $this->__('User Defined:') . $manifest->title;
-                } else {
+                        $caption_text = $this->__('User Defined:') . $manifest->title;
+                    } else {
 
-                    $caption_text = $manifest->title . ' ' . $this->__('by') . " <a style='color:#DDD' target='_blank' href='" . $manifest->website_url . "'>" . $manifest->author_name . "</a>";
-                }
+                        $caption_text = $manifest->title . ' ' . $this->__('by') . " <a style='color:#DDD' target='_blank' href='" . $manifest->website_url . "'>" . $manifest->author_name . "</a>";
+                    }
 
 
-                if (strpos($upper_screenshot, 'HTTP') === 0) {
-                    // It's an absolute path
-                    $slidePath = $manifest->screenshot;
-                } else {
-                    // Relative path
-                    $slidePath = $manifest->mini_theme_url . "/" . $manifest->screenshot;
-                }
+                    if (strpos($upper_screenshot, 'HTTP') === 0) {
+                        // It's an absolute path
+                        $slidePath = $manifest->screenshot;
+                    } else {
+                        // Relative path
+                        $slidePath = $manifest->mini_theme_url . "/" . $manifest->screenshot;
+                    }
 
-                if ($manifest->key == $currentValue) {
-                    $startingIndex = $displayIndex;
-                }
-                ?>
+                    if ($manifest->key == $currentValue) {
+                        $startingIndex = $displayIndex;
+                    }
+                    ?>
                     <li>                                                
                         <img style="display:none" idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" title="<?php echo $caption_text; ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
                     </li>
-                <?php
-                $displayIndex++;
-            }
-            ?>
+                    <?php
+                    $displayIndex++;
+                }
+                ?>
                 <!--                ... (repeat for every image in the gallery)-->
             </ul>
 
             <!-- THUMBNAIL SLIDER -->
             <ul id="easy-pie-mm-bxslider-pager">
 
-            <?php
-            $displayIndex = 0;
-            $startingIndex = 0;
+                <?php
+                $displayIndex = 0;
+                $startingIndex = 0;
 
-            foreach ($manifests as $manifest) {
+                foreach ($manifests as $manifest) {
 
-                // $slidePath = $manifest->mini_theme_url . "/" . $manifest->screenshot;
+                    // $slidePath = $manifest->mini_theme_url . "/" . $manifest->screenshot;
 
-                $upper_screenshot = strtoupper($manifest->screenshot);
+                    $upper_screenshot = strtoupper($manifest->screenshot);
 
-                if (strpos($upper_screenshot, 'HTTP') === 0) {
-                    // It's an absolute path
-                    $slidePath = $manifest->screenshot;
-                } else {
-                    // Relative path
-                    $slidePath = $manifest->mini_theme_url . "/" . $manifest->screenshot;
-                }
+                    if (strpos($upper_screenshot, 'HTTP') === 0) {
+                        // It's an absolute path
+                        $slidePath = $manifest->screenshot;
+                    } else {
+                        // Relative path
+                        $slidePath = $manifest->mini_theme_url . "/" . $manifest->screenshot;
+                    }
 
-                if ($manifest->key == $currentValue) {
-                    $startingIndex = $displayIndex;
-                }
-                ?>
+                    if ($manifest->key == $currentValue) {
+                        $startingIndex = $displayIndex;
+                    }
+                    ?>
                     <li>                                                
                         <img style="display:none" idx="<?php echo $displayIndex; ?>" src="<?php echo $slidePath ?>" onclick="jQuery('#<?php echo $id; ?>').attr('value', '<?php echo $manifest->key; ?>');" />
                     </li>
-                <?php
-                $displayIndex++;
-            }
-            ?>                
+                    <?php
+                    $displayIndex++;
+                }
+                ?>                
             </ul>
 
             <input displayIndex="<?php echo $startingIndex; ?>" style="visibility:hidden" id="<?php echo $id; ?>" name="<?php echo $optionExpression; ?>" value="<?php echo $currentValue; ?>"/>

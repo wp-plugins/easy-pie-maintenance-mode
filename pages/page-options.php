@@ -49,13 +49,17 @@
             </div>
             <?php
             submit_button();
-
-            $format = "<p style='margin-top:10px'>%s <a target='_blank' href='%s'>%s %s </a> %s <a target='_blank' href='%s'>%s</a>.</p>";
-
-            $resolved = sprintf($format, Easy_Pie_MM_Utility::__('Comment or question?'), "mailto:bob@easypiewp.com", Easy_Pie_MM_Utility::__('Email'),  "Bob", Easy_Pie_MM_Utility::__('or stop by') , "http://easypiewp.com", "easypiewp.com");
-
-            Easy_Pie_MM_Utility::_e($resolved);
             ?>
+            
+            <a href="http://easypiewp.com/easy-pie-maintenance-mode-faq/" target="_blank"><?php $this->_e('Plugin FAQ'); ?></a>
+            |
+            <a href="http://easypiewp.com/about/" target="_blank"><?php $this->_e('Feature Request'); ?></a>
+            |
+            <a href="http://easypiewp.com/about/" target="_blank"><?php $this->_e('Report Bug'); ?></a>
+            |
+            <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-maintenance-mode" target="_blank"><?php $this->_e('Write Review'); ?></a>
+            |
+            <a href="mailto:bob@easypiewp.com"><?php $this->_e('Contact Bob'); ?></a>
         </form>
     </div>
 </div>

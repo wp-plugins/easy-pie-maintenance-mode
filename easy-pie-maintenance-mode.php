@@ -3,7 +3,7 @@
   Plugin Name: Easy Pie Maintenance Mode
   Plugin URI: http://easypiewp.com/easy-pie-maintenance-mode-faq/
   Description: Lets people know that your site is temporarily down.
-  Version: 0.6.3
+  Version: 0.6.4
   Author: Bob Riley
   Author URI: http://www.easypiewp.com
   Text Domain: easy-pie-maintenance-mode
