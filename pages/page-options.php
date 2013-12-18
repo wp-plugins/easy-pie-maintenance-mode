@@ -59,7 +59,7 @@
             |
             <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-maintenance-mode" target="_blank"><?php $this->_e('Write Review'); ?></a>
             |
-            <a href="mailto:bob@easypiewp.com"><?php $this->_e('Contact Bob'); ?></a>
+            <a href="mailto:bob@easypiewp.com" target="_blank"><?php $this->_e('Contact Bob'); ?></a>
         </form>
     </div>
 </div>

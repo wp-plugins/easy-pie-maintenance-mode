@@ -183,8 +183,8 @@ if (!class_exists('Easy_Pie_MM')) {
 
             wp_enqueue_script('jquery');
             wp_enqueue_script('jquery-ui-core');
-            wp_enqueue_script('jquery.bxslider', $jsRoot . "/jquery.bxslider.min.js", array("jquery"));
-            wp_enqueue_script("easy_pie_mm_functions", $jsRoot . "/functions.js", array("jquery", "jquery.bxslider"));
+            wp_enqueue_script('jquery.bxslider', $jsRoot . "/jquery.bxslider.min.js", array("jquery"), Easy_Pie_MM_Constants::PLUGIN_VERSION);
+            wp_enqueue_script("easy_pie_mm_functions", $jsRoot . "/functions.js", array("jquery", "jquery.bxslider"), Easy_Pie_MM_Constants::PLUGIN_VERSION);
 
             wp_enqueue_media();
         }
@@ -196,10 +196,10 @@ if (!class_exists('Easy_Pie_MM')) {
             
             $styleRoot = plugins_url() . "/" . Easy_Pie_MM_Constants::PLUGIN_SLUG . "/styles";
             
-            wp_register_style('jquery.bxslider.css', $styleRoot . '/jquery.bxslider.css');
+            wp_register_style('jquery.bxslider.css', $styleRoot . '/jquery.bxslider.css', array(), Easy_Pie_MM_Constants::PLUGIN_VERSION);
             wp_enqueue_style('jquery.bxslider.css');
 
-            wp_register_style('easy-pie-styles.css', $styleRoot . '/easy-pie-styles.css');
+            wp_register_style('easy-pie-styles.css', $styleRoot . '/easy-pie-styles.css', array(), Easy_Pie_MM_Constants::PLUGIN_VERSION);
             wp_enqueue_style('easy-pie-styles.css');
         }
 
