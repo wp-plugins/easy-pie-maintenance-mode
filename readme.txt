@@ -11,6 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Easily let website visitors know your site is temporarily down while you're working on it.
 
 == Description ==
+
 Need to let your visitors know your site is temporarily down or is under construction? The Easy Pie maintenance mode plugin makes it easy. 
 
 ### Basic Features
