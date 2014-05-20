@@ -12,16 +12,16 @@ Easily let website visitors know your site is temporarily down while you're work
 
 == Description ==
 
-Need to let your visitors know your site is temporarily down or is under construction? The Easy Pie maintenance mode plugin makes it easy. 
+Need to let your visitors know your site is temporarily down or is under construction? Easy Pie Maintenance Mode makes it easy. 
 
 ### Basic Features
-* **Simple.** No confusing options or complex setup
-* **Mini themes.** Includes four professionally-designed, responsive mini-themes
-* **Pre-styled text.** Title, header, headline and message text gets styled without requiring HTML or CSS
-* **Add your own logo.** Easily add your own logo using the WordPress Media Library.
+* **Simple.** No confusing options or complex setup.
+* **Mini themes.** Choose between four professionally-designed, responsive mini-themes for display when in Maintenance Mode.
+* **Pre-styled text.** Title, header, headline and message text gets styled without requiring HTML or CSS.
+* **Add your own logo.** Add your own logo using the WordPress Media Library to give Maintenance Mode a personal touch.
 
 ### Advanced Features
-* **Custom CSS.** Easily add CSS from the Admin page to customize a mini-theme.
+* **Custom CSS.** Easily add CSS from the Admin page to customize a Maintenance Mode mini-theme.
 * **User Mini Themes.** Change the built-in themes or create your own mini-themes from scratch.
 
 Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image viewer.
