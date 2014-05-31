@@ -1,42 +1,54 @@
 === Easy Pie Maintenance Mode ===
 Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
-Tags: maintenance, admin, administration, construction, under construction, maintenance mode, offline, unavailable, launch
+Tags: maintenance, admin, administration, construction, under construction, maintenance mode, offline, unavailable, launch, wordpress maintenance mode, site maintenance, coming soon
 Requires at least: 3.5
-Tested up to: 3.8
+Tested up to: 3.9.1
 Stable tag: 0.6.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily let website visitors know your site is temporarily down while you're working on it.
+Easily let website visitors know your site is undergoing maintenance.
 
 == Description ==
 
-Need to let your visitors know your site is temporarily down or is under construction? Easy Pie Maintenance Mode makes it easy. 
+Need to let your visitors know your site is undergoing maintenance or coming soon? Easy Pie Maintenance Mode makes it easy! 
 
-### Basic Features
+### Maintenance Mode Basic Features
 * **Simple.** No confusing options or complex setup.
-* **Mini themes.** Choose between four professionally-designed, responsive mini-themes for display when in Maintenance Mode.
+* **Mini themes.** Choose between four professionally-designed, responsive mini-themes to display when in Maintenance Mode.
 * **Pre-styled text.** Title, header, headline and message text gets styled without requiring HTML or CSS.
 * **Add your own logo.** Add your own logo using the WordPress Media Library to give Maintenance Mode a personal touch.
 
 ### Advanced Features
 * **Custom CSS.** Easily add CSS from the Admin page to customize a Maintenance Mode mini-theme.
-* **User Mini Themes.** Change the built-in themes or create your own mini-themes from scratch.
+* **User Mini Themes.** Greatly customize Maintenance Mode by creating your own mini-theme.
 
 Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image viewer.
 
 == Installation ==
 
-1. Click Plugins/Add New from the WordPress admin panel
-1. Search for "easy pie maintenance mode" and install
+= Using The WordPress Dashboard =
 
--or-
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Search for 'Coming Soon Page'
+3. Click 'Install Now'
+4. Activate the plugin on the Plugin dashboard
 
-1. Download the .zip package
-1. Unzip into the subdirectory 'easy-pie-maintenance-mode' within your local WordPress plugins directory
-1. Refresh plugin page and activate plugin
-1. Configure plugin using *settings* link under plugin name or by going to Settings/Maintenance mode
+= Uploading in WordPress Dashboard =
+
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Navigate to the 'Upload' area
+3. Select `easy-pie-maintenance-mode.zip` from your computer
+4. Click 'Install Now'
+5. Activate the plugin in the Plugin dashboard
+
+= Using FTP =
+
+1. Download `easy-pie-coming-soon.zip`
+2. Extract the `easy-pie-maintenance-mode` directory to your computer
+3. Upload the `easy-pie-maintenance-mode` directory to the `/wp-content/plugins/` directory
+4. Activate the plugin in the Plugin's dashboard
 
 == Frequently Asked Questions ==
 
