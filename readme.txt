@@ -1,7 +1,7 @@
 === Easy Pie Maintenance Mode ===
 Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
-Tags: maintenance, admin, administration, construction, under construction, maintenance mode, offline, unavailable, launch, wordpress maintenance mode, site maintenance, coming soon
+Tags: maintenance, admin, administration, construction, under construction, maintenance mode, offline, unavailable, launch, wordpress maintenance mode, site maintenance
 Requires at least: 3.5
 Tested up to: 3.9.1
 Stable tag: 0.6.4
@@ -12,7 +12,7 @@ Easily let website visitors know your site is undergoing maintenance.
 
 == Description ==
 
-Need to let your visitors know your site is undergoing maintenance or coming soon? Easy Pie Maintenance Mode makes it easy! 
+Need to let your visitors know your site is undergoing maintenance? Easy Pie Maintenance Mode makes it easy! 
 
 ### Maintenance Mode Basic Features
 * **Simple.** No confusing options or complex setup.
@@ -23,6 +23,12 @@ Need to let your visitors know your site is undergoing maintenance or coming soo
 ### Advanced Features
 * **Custom CSS.** Easily add CSS from the Admin page to customize a Maintenance Mode mini-theme.
 * **User Mini Themes.** Greatly customize Maintenance Mode by creating your own mini-theme.
+
+### Overview
+Easy Pie Maintenance Mode was designed to let you get to the important work of improving your site while visitors know you are performing maintenance in the shortest time possible. We've supplied four very nice looking themes to display when your site is undergoing maintenance.  Additionally, you can easily cator these to your tastes using CSS. For the advanced users, you can create your own mini theme  to be displayed when the site is undergoing maintenance.
+
+In this way, both beginners and pros will find Easy Pie Maintenance Mode not only easy to use but highly flexible as well.
+
 
 Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image viewer.
 
@@ -45,7 +51,7 @@ Thanks to the developers of [bxSlider](http://bxslider.com) for their cool image
 
 = Using FTP =
 
-1. Download `easy-pie-coming-soon.zip`
+1. Download `easy-pie-maintenance-mode.zip`
 2. Extract the `easy-pie-maintenance-mode` directory to your computer
 3. Upload the `easy-pie-maintenance-mode` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin's dashboard
