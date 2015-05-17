@@ -101,6 +101,9 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 == Changelog ==
 
+= 0.6.6 =
+* Cleaned up UI
+
 = 0.6.5 =
 * Small tweaks
 
@@ -133,6 +136,9 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.6 =
+Cleaned up UI
 
 = 0.6.5 =
 Small tweaks
