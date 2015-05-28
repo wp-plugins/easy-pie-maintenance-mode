@@ -52,7 +52,7 @@
                 </table>
             </div>
             
-            <div style="margin-top:30px; margin-bottom:25px; border-radius:4px; box-shadow: 1px 6px 36px -5px rgba(34,34,34,1);width: 489px; color: rgb(200, 22, 22); background-color: white;font-weight: bold;border: red solid 1px;padding: 5px;">Email collection, countdown timer, social media and more <a href="https://easypiewp.com/coming-soon-page-elite-mm?footerfixed" target="_blank">in our Pro product!</a>                       
+            <div style="margin-top:30px; margin-bottom:25px; border-radius:4px; box-shadow: 1px 6px 36px -5px rgba(34,34,34,1);width: 514px; color: rgb(200, 22, 22); background-color: white;font-weight: bold;border: red solid 1px;padding: 5px;">Custom backgrounds, email collection, social media and more <a href="https://easypiewp.com/coming-soon-page-elite-mm?footerfixed" target="_blank">in our Pro product!</a>                       
             </div>
             
             <?php
