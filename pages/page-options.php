@@ -11,7 +11,7 @@
 <div class="wrap">
 
     <?php screen_icon(Easy_Pie_MM_Constants::PLUGIN_SLUG); ?>
-    <h2>Easy Pie Maintenance Mode <a target="_blank" href="https://easypiewp.com/coming-soon-page-elite-mm?header" style="font-size: 9px; font-weight:bold; color:red;margin-left: 3px;"><?php Easy_Pie_MM_Utility::_e('GO PRO!'); ?></a></h2>
+    <h2>Easy Pie Maintenance Mode</h2>
     <?php
     if (isset($_GET['settings-updated'])) {
         echo "<div class='updated'><p>" . Easy_Pie_MM_Utility::__('If you have a caching plugin, be sure to clear the cache!') . "</p></div>";
@@ -51,14 +51,17 @@
                     </tr>
                 </table>
             </div>
+            
+            <div style="margin-top:30px; margin-bottom:25px; border-radius:4px; box-shadow: 1px 6px 36px -5px rgba(34,34,34,1);width: 489px; color: rgb(200, 22, 22); background-color: white;font-weight: bold;border: red solid 1px;padding: 5px;">Email collection, countdown timer, social media and more <a href="https://easypiewp.com/coming-soon-page-elite-mm?footerfixed" target="_blank">in our Pro product!</a>                       
+            </div>
+            
             <?php
             submit_button();
             ?>
+                        
             <a href="http://easypiewp.com/easy-pie-maintenance-mode-faq/" target="_blank"><?php $this->_e('Plugin FAQ'); ?></a>
             |
             <a href="mailto:bob@easypiewp.com" target="_blank"><?php $this->_e('Contact Bob'); ?></a>
-            |
-            <a href="https://easypiewp.com/coming-soon-page-elite-mm?footer" target="_blank" style="color: red; font-weight: bold;"><?php $this->_e('GO PRO!'); ?></a>
         </form>
     </div>
 </div>
